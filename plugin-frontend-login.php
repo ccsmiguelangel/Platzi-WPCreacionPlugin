@@ -13,8 +13,11 @@
  * Text Domain:       yardsale
 */
 
-require_once plugin_dir_path(__FILE__).'public/shortcode/form-registro.php';
+require plugin_dir_path(__FILE__).'includes/API/api-registro.php';
 
+// Shortcodes
+require_once plugin_dir_path(__FILE__).'public/shortcode/form-registro.php';
+require_once plugin_dir_path(__FILE__).'public/shortcode/form-login.php';
 // Test
 // function plz_test(){
 //     echo "<h1>Mi primer plugin</h1>";
