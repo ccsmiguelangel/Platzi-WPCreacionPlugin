@@ -1,8 +1,14 @@
 <?php
 
+function plz_script_register(){
+  wp_register_script("plz-register", plugins_url("../assets/js/registro.js",__FILE__));
+}
+
+add_action("wp_enqueue_scripts","plz_script_register");
 
 function plz_add_register_form()
 {
+  wp_enqueue_script("plz-register");
 
   $response = '
   <div class="signin">

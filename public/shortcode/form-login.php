@@ -1,13 +1,8 @@
 <?php
 
-function plz_script_login(){
-    wp_register_script("plz-login", plugins_url("../assets/js/login.js",__FILE__));
-}
 
-add_action("wp_enqueue_scripts","plz_script_login");
 
 function plz_add_login_form(){
-    wp_enqueue_script("plz-login");
     $response = '
     <main class="signin">
         <div class="signin__container">

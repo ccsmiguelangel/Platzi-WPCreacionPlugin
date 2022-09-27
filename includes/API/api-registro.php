@@ -6,8 +6,7 @@ function plz_api_register(){
   $namespace = 'plz'; //wp.com/wp-json/plz
   $route = 'registro'; //wp.com/wp-json/plz/registro
   $args = array(
-    // 'methods' => 'POST', //
-    'methods' => 'GET', //
+    'methods' => 'POST', 
     'callback' => 'plz_registro_callback'
   );
 
