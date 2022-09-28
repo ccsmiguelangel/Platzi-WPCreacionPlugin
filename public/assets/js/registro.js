@@ -2,8 +2,9 @@ window.addEventListener('DOMContentLoaded', function(){
 
   console.log('registro js cargado');
 
-  let form = document.querySelector('#signin')
-
+  let form = document.querySelector('#signin');
+  let $msg = document.querySelector('#msg');
+console.log($msg);
   form.addEventListener('submit', function(e){
     e.preventDefault();
 
@@ -21,6 +22,7 @@ window.addEventListener('DOMContentLoaded', function(){
     .then(res => res.json())
     .then(json=>{
       console.log(json);
+      $msg.innerHTML = json?.msg;
     })
     .catch(err=>{
       console.log(`Hay error ${err}`);

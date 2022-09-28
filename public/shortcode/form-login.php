@@ -21,7 +21,6 @@ function plz_add_login_form(){
                 <div class="signin_create-link">
                     <a href="'.home_url("sing-up").'">Sign up</a>
                 </div>
-                <div class="msg"></div>
             </form>
         </div>
     </main>
