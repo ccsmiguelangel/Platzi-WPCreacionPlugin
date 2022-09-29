@@ -13,6 +13,7 @@
  * Text Domain:       yardsale
 */
 
+require plugin_dir_path(__FILE__).'includes/API/api-login.php';
 require plugin_dir_path(__FILE__).'includes/API/api-registro.php';
 
 // Shortcodes

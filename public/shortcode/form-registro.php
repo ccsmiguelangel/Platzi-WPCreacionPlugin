@@ -11,23 +11,23 @@ function plz_add_register_form()
   wp_enqueue_script("plz-register");
 
   $response = '
-  <div class="signin">
-    <div class="signin__container">
+  <div class="singup">
+    <div class="singup__container">
       <h1 class="sigin__titulo">Register</h1>
-      <form class="signin__form" id="signin">
-        <div class="signin__name name--campo">
+      <form class="singup__form" id="singup">
+        <div class="singup__name name--campo">
           <label for="Name">Name</label>
           <input name="name" type="text" id="Name">
         </div>
-        <div class="signin__email name--campo">
+        <div class="singup__email name--campo">
           <label for="email">Email</label>
           <input name="email" type="email" id="email">
         </div>
-        <div class="signin__pass name--campo">
+        <div class="singup__pass name--campo">
           <label for="password">Password</label>
           <input name="password" type="password" id="password">
         </div>
-        <div class="signin__submit">
+        <div class="singup__submit">
           <input type="submit" value="Create">
         </div>
         <div id="msg"></div>
