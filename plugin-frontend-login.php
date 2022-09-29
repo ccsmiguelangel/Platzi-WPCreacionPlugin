@@ -25,3 +25,13 @@ require_once plugin_dir_path(__FILE__).'public/shortcode/form-login.php';
 // }
 
 // add_action("wp_head","plz_test");
+
+function plz_to_activate_plugin(){
+  add_role('cliente', 'Cliente', 'read_post');
+}
+register_activation_hook(__FILE__, 'plz_to_activate_plugin');
+
+function plz_to_desactivate_plugin(){
+  remove_role('cliente');
+}
+register_deactivation_hook(__FILE__, 'plz_to_desactivate_plugin');
